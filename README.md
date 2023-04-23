@@ -1,2 +1,3 @@
 # Cinemo-App
-create App with Swift
+Create App with Swift
+- connection with APIs "https://www.majorcineplex.com/apis/get_movie_avaiable"
