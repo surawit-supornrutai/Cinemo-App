@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3527B58E2AC1C39B1C218421 /* Pods_CinemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBED3F5EA5F27F05D5FE160B /* Pods_CinemoApp.framework */; };
+		BC3D23CF29F44DD600220024 /* GetFavoriteMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3D23CE29F44DD600220024 /* GetFavoriteMovieModel.swift */; };
+		BC922AED29F50C0900168A24 /* ListMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC922AEC29F50C0800168A24 /* ListMovieModel.swift */; };
+		BCF8DA4A29F29DE3008890A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA4929F29DE3008890A0 /* AppDelegate.swift */; };
+		BCF8DA4C29F29DE3008890A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA4B29F29DE3008890A0 /* SceneDelegate.swift */; };
+		BCF8DA4E29F29DE3008890A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA4D29F29DE3008890A0 /* ViewController.swift */; };
+		BCF8DA5129F29DE3008890A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF8DA4F29F29DE3008890A0 /* Main.storyboard */; };
+		BCF8DA5329F29DE5008890A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF8DA5229F29DE5008890A0 /* Assets.xcassets */; };
+		BCF8DA5629F29DE5008890A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF8DA5429F29DE5008890A0 /* LaunchScreen.storyboard */; };
+		BCF8DA6129F29DE6008890A0 /* CinemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA6029F29DE6008890A0 /* CinemoAppTests.swift */; };
+		BCF8DA6B29F29DE6008890A0 /* CinemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA6A29F29DE6008890A0 /* CinemoAppUITests.swift */; };
+		BCF8DA6D29F29DE6008890A0 /* CinemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA6C29F29DE6008890A0 /* CinemoAppUITestsLaunchTests.swift */; };
+		BCF8DA7F29F29F9E008890A0 /* ViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA7E29F29F9E008890A0 /* ViewControllerLayout.swift */; };
+		BCF8DA8129F2A087008890A0 /* GetMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA8029F2A087008890A0 /* GetMovieModel.swift */; };
+		BCF8DA8429F2A275008890A0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA8329F2A275008890A0 /* UIViewControllerExtension.swift */; };
+		BCF8DA8729F2A2DA008890A0 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA8629F2A2DA008890A0 /* Connection.swift */; };
+		BCF8DA8929F2A6F5008890A0 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA8829F2A6F5008890A0 /* UITextFieldExtension.swift */; };
+		BCF8DA8B29F2A71D008890A0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA8A29F2A71D008890A0 /* UIColorExtension.swift */; };
+		BCF8DA8D29F2A75C008890A0 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA8C29F2A75C008890A0 /* UIViewExtension.swift */; };
+		BCF8DA8F29F2AEC9008890A0 /* DetailMovieLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA8E29F2AEC9008890A0 /* DetailMovieLayout.swift */; };
+		BCF8DA9129F2AEFE008890A0 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA9029F2AEFE008890A0 /* DetailMovieViewController.swift */; };
+		BCF8DA9329F2AF86008890A0 /* FavoriteMovieLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA9229F2AF86008890A0 /* FavoriteMovieLayout.swift */; };
+		BCF8DA9529F2AF99008890A0 /* FavoriteMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA9429F2AF99008890A0 /* FavoriteMovieViewController.swift */; };
+		BCF8DA9A29F2B0F5008890A0 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA9929F2B0F5008890A0 /* UIFontExtension.swift */; };
+		BCF8DA9D29F2B62C008890A0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA9C29F2B62C008890A0 /* HeaderView.swift */; };
+		BCF8DA9F29F2BABA008890A0 /* ListMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8DA9E29F2BABA008890A0 /* ListMovieTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCF8DA5D29F29DE6008890A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCF8DA3E29F29DE3008890A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF8DA4529F29DE3008890A0;
+			remoteInfo = CinemoApp;
+		};
+		BCF8DA6729F29DE6008890A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCF8DA3E29F29DE3008890A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF8DA4529F29DE3008890A0;
+			remoteInfo = CinemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC3D23CE29F44DD600220024 /* GetFavoriteMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteMovieModel.swift; sourceTree = "<group>"; };
+		BC922AEC29F50C0800168A24 /* ListMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieModel.swift; sourceTree = "<group>"; };
+		BCF8DA4629F29DE3008890A0 /* CinemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF8DA4929F29DE3008890A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCF8DA4B29F29DE3008890A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BCF8DA4D29F29DE3008890A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCF8DA5029F29DE3008890A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCF8DA5229F29DE5008890A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCF8DA5529F29DE5008890A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCF8DA5729F29DE5008890A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF8DA5C29F29DE6008890A0 /* CinemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF8DA6029F29DE6008890A0 /* CinemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoAppTests.swift; sourceTree = "<group>"; };
+		BCF8DA6629F29DE6008890A0 /* CinemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF8DA6A29F29DE6008890A0 /* CinemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoAppUITests.swift; sourceTree = "<group>"; };
+		BCF8DA6C29F29DE6008890A0 /* CinemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BCF8DA7E29F29F9E008890A0 /* ViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLayout.swift; sourceTree = "<group>"; };
+		BCF8DA8029F2A087008890A0 /* GetMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieModel.swift; sourceTree = "<group>"; };
+		BCF8DA8329F2A275008890A0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		BCF8DA8629F2A2DA008890A0 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		BCF8DA8829F2A6F5008890A0 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		BCF8DA8A29F2A71D008890A0 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		BCF8DA8C29F2A75C008890A0 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		BCF8DA8E29F2AEC9008890A0 /* DetailMovieLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieLayout.swift; sourceTree = "<group>"; };
+		BCF8DA9029F2AEFE008890A0 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
+		BCF8DA9229F2AF86008890A0 /* FavoriteMovieLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMovieLayout.swift; sourceTree = "<group>"; };
+		BCF8DA9429F2AF99008890A0 /* FavoriteMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMovieViewController.swift; sourceTree = "<group>"; };
+		BCF8DA9729F2B09E008890A0 /* Prompt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Light.ttf"; sourceTree = "<group>"; };
+		BCF8DA9829F2B09E008890A0 /* Prompt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Bold.ttf"; sourceTree = "<group>"; };
+		BCF8DA9929F2B0F5008890A0 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		BCF8DA9C29F2B62C008890A0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		BCF8DA9E29F2BABA008890A0 /* ListMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieTableViewCell.swift; sourceTree = "<group>"; };
+		C29F62162DDB4ACEA0C1C18C /* Pods-CinemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemoApp.release.xcconfig"; path = "Target Support Files/Pods-CinemoApp/Pods-CinemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		F03A6DA9E3E36C1DEA41FFEF /* Pods-CinemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemoApp.debug.xcconfig"; path = "Target Support Files/Pods-CinemoApp/Pods-CinemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FBED3F5EA5F27F05D5FE160B /* Pods_CinemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CinemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCF8DA4329F29DE3008890A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3527B58E2AC1C39B1C218421 /* Pods_CinemoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF8DA5929F29DE6008890A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF8DA6329F29DE6008890A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42BFA03674EC6D2FA64688B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBED3F5EA5F27F05D5FE160B /* Pods_CinemoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A24A1C72EEC704BB0E3EC70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F03A6DA9E3E36C1DEA41FFEF /* Pods-CinemoApp.debug.xcconfig */,
+				C29F62162DDB4ACEA0C1C18C /* Pods-CinemoApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BCF8DA3D29F29DE3008890A0 = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA4829F29DE3008890A0 /* CinemoApp */,
+				BCF8DA5F29F29DE6008890A0 /* CinemoAppTests */,
+				BCF8DA6929F29DE6008890A0 /* CinemoAppUITests */,
+				BCF8DA4729F29DE3008890A0 /* Products */,
+				7A24A1C72EEC704BB0E3EC70 /* Pods */,
+				42BFA03674EC6D2FA64688B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCF8DA4729F29DE3008890A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA4629F29DE3008890A0 /* CinemoApp.app */,
+				BCF8DA5C29F29DE6008890A0 /* CinemoAppTests.xctest */,
+				BCF8DA6629F29DE6008890A0 /* CinemoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCF8DA4829F29DE3008890A0 /* CinemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA8529F2A2C8008890A0 /* Connection */,
+				BCF8DA7A29F29E99008890A0 /* Layout */,
+				BCF8DA7929F29E7E008890A0 /* Controller */,
+				BCF8DA7D29F29F0A008890A0 /* Model */,
+				BCF8DA7C29F29F05008890A0 /* Cell */,
+				BCF8DA8229F2A250008890A0 /* Extension */,
+				BCF8DA9629F2B032008890A0 /* Font */,
+				BCF8DA4929F29DE3008890A0 /* AppDelegate.swift */,
+				BCF8DA4B29F29DE3008890A0 /* SceneDelegate.swift */,
+				BCF8DA4F29F29DE3008890A0 /* Main.storyboard */,
+				BCF8DA5229F29DE5008890A0 /* Assets.xcassets */,
+				BCF8DA5429F29DE5008890A0 /* LaunchScreen.storyboard */,
+				BCF8DA5729F29DE5008890A0 /* Info.plist */,
+			);
+			path = CinemoApp;
+			sourceTree = "<group>";
+		};
+		BCF8DA5F29F29DE6008890A0 /* CinemoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA6029F29DE6008890A0 /* CinemoAppTests.swift */,
+			);
+			path = CinemoAppTests;
+			sourceTree = "<group>";
+		};
+		BCF8DA6929F29DE6008890A0 /* CinemoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA6A29F29DE6008890A0 /* CinemoAppUITests.swift */,
+				BCF8DA6C29F29DE6008890A0 /* CinemoAppUITestsLaunchTests.swift */,
+			);
+			path = CinemoAppUITests;
+			sourceTree = "<group>";
+		};
+		BCF8DA7929F29E7E008890A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA4D29F29DE3008890A0 /* ViewController.swift */,
+				BCF8DA9029F2AEFE008890A0 /* DetailMovieViewController.swift */,
+				BCF8DA9429F2AF99008890A0 /* FavoriteMovieViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BCF8DA7A29F29E99008890A0 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA9B29F2B617008890A0 /* CustomHeader */,
+				BCF8DA7E29F29F9E008890A0 /* ViewControllerLayout.swift */,
+				BCF8DA8E29F2AEC9008890A0 /* DetailMovieLayout.swift */,
+				BCF8DA9229F2AF86008890A0 /* FavoriteMovieLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		BCF8DA7C29F29F05008890A0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA9E29F2BABA008890A0 /* ListMovieTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BCF8DA7D29F29F0A008890A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA8029F2A087008890A0 /* GetMovieModel.swift */,
+				BC3D23CE29F44DD600220024 /* GetFavoriteMovieModel.swift */,
+				BC922AEC29F50C0800168A24 /* ListMovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCF8DA8229F2A250008890A0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA8329F2A275008890A0 /* UIViewControllerExtension.swift */,
+				BCF8DA8829F2A6F5008890A0 /* UITextFieldExtension.swift */,
+				BCF8DA8A29F2A71D008890A0 /* UIColorExtension.swift */,
+				BCF8DA8C29F2A75C008890A0 /* UIViewExtension.swift */,
+				BCF8DA9929F2B0F5008890A0 /* UIFontExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BCF8DA8529F2A2C8008890A0 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA8629F2A2DA008890A0 /* Connection.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		BCF8DA9629F2B032008890A0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA9829F2B09E008890A0 /* Prompt-Bold.ttf */,
+				BCF8DA9729F2B09E008890A0 /* Prompt-Light.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		BCF8DA9B29F2B617008890A0 /* CustomHeader */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8DA9C29F2B62C008890A0 /* HeaderView.swift */,
+			);
+			path = CustomHeader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCF8DA4529F29DE3008890A0 /* CinemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF8DA7029F29DE6008890A0 /* Build configuration list for PBXNativeTarget "CinemoApp" */;
+			buildPhases = (
+				49A5DFA054326A29E18E1712 /* [CP] Check Pods Manifest.lock */,
+				BCF8DA4229F29DE3008890A0 /* Sources */,
+				BCF8DA4329F29DE3008890A0 /* Frameworks */,
+				BCF8DA4429F29DE3008890A0 /* Resources */,
+				A7C08A4C65944D6005ED743F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CinemoApp;
+			productName = CinemoApp;
+			productReference = BCF8DA4629F29DE3008890A0 /* CinemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCF8DA5B29F29DE6008890A0 /* CinemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF8DA7329F29DE6008890A0 /* Build configuration list for PBXNativeTarget "CinemoAppTests" */;
+			buildPhases = (
+				BCF8DA5829F29DE6008890A0 /* Sources */,
+				BCF8DA5929F29DE6008890A0 /* Frameworks */,
+				BCF8DA5A29F29DE6008890A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCF8DA5E29F29DE6008890A0 /* PBXTargetDependency */,
+			);
+			name = CinemoAppTests;
+			productName = CinemoAppTests;
+			productReference = BCF8DA5C29F29DE6008890A0 /* CinemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCF8DA6529F29DE6008890A0 /* CinemoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF8DA7629F29DE6008890A0 /* Build configuration list for PBXNativeTarget "CinemoAppUITests" */;
+			buildPhases = (
+				BCF8DA6229F29DE6008890A0 /* Sources */,
+				BCF8DA6329F29DE6008890A0 /* Frameworks */,
+				BCF8DA6429F29DE6008890A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCF8DA6829F29DE6008890A0 /* PBXTargetDependency */,
+			);
+			name = CinemoAppUITests;
+			productName = CinemoAppUITests;
+			productReference = BCF8DA6629F29DE6008890A0 /* CinemoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCF8DA3E29F29DE3008890A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BCF8DA4529F29DE3008890A0 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					BCF8DA5B29F29DE6008890A0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BCF8DA4529F29DE3008890A0;
+					};
+					BCF8DA6529F29DE6008890A0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BCF8DA4529F29DE3008890A0;
+					};
+				};
+			};
+			buildConfigurationList = BCF8DA4129F29DE3008890A0 /* Build configuration list for PBXProject "CinemoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCF8DA3D29F29DE3008890A0;
+			productRefGroup = BCF8DA4729F29DE3008890A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCF8DA4529F29DE3008890A0 /* CinemoApp */,
+				BCF8DA5B29F29DE6008890A0 /* CinemoAppTests */,
+				BCF8DA6529F29DE6008890A0 /* CinemoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCF8DA4429F29DE3008890A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF8DA5629F29DE5008890A0 /* LaunchScreen.storyboard in Resources */,
+				BCF8DA5329F29DE5008890A0 /* Assets.xcassets in Resources */,
+				BCF8DA5129F29DE3008890A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF8DA5A29F29DE6008890A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF8DA6429F29DE6008890A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49A5DFA054326A29E18E1712 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CinemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7C08A4C65944D6005ED743F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CinemoApp/Pods-CinemoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CinemoApp/Pods-CinemoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CinemoApp/Pods-CinemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCF8DA4229F29DE3008890A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF8DA8F29F2AEC9008890A0 /* DetailMovieLayout.swift in Sources */,
+				BCF8DA9A29F2B0F5008890A0 /* UIFontExtension.swift in Sources */,
+				BC922AED29F50C0900168A24 /* ListMovieModel.swift in Sources */,
+				BCF8DA8D29F2A75C008890A0 /* UIViewExtension.swift in Sources */,
+				BCF8DA4E29F29DE3008890A0 /* ViewController.swift in Sources */,
+				BCF8DA8929F2A6F5008890A0 /* UITextFieldExtension.swift in Sources */,
+				BCF8DA9129F2AEFE008890A0 /* DetailMovieViewController.swift in Sources */,
+				BCF8DA4A29F29DE3008890A0 /* AppDelegate.swift in Sources */,
+				BCF8DA8429F2A275008890A0 /* UIViewControllerExtension.swift in Sources */,
+				BCF8DA7F29F29F9E008890A0 /* ViewControllerLayout.swift in Sources */,
+				BCF8DA8B29F2A71D008890A0 /* UIColorExtension.swift in Sources */,
+				BCF8DA9F29F2BABA008890A0 /* ListMovieTableViewCell.swift in Sources */,
+				BCF8DA4C29F29DE3008890A0 /* SceneDelegate.swift in Sources */,
+				BCF8DA9329F2AF86008890A0 /* FavoriteMovieLayout.swift in Sources */,
+				BCF8DA8129F2A087008890A0 /* GetMovieModel.swift in Sources */,
+				BCF8DA8729F2A2DA008890A0 /* Connection.swift in Sources */,
+				BC3D23CF29F44DD600220024 /* GetFavoriteMovieModel.swift in Sources */,
+				BCF8DA9529F2AF99008890A0 /* FavoriteMovieViewController.swift in Sources */,
+				BCF8DA9D29F2B62C008890A0 /* HeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF8DA5829F29DE6008890A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF8DA6129F29DE6008890A0 /* CinemoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF8DA6229F29DE6008890A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF8DA6B29F29DE6008890A0 /* CinemoAppUITests.swift in Sources */,
+				BCF8DA6D29F29DE6008890A0 /* CinemoAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCF8DA5E29F29DE6008890A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCF8DA4529F29DE3008890A0 /* CinemoApp */;
+			targetProxy = BCF8DA5D29F29DE6008890A0 /* PBXContainerItemProxy */;
+		};
+		BCF8DA6829F29DE6008890A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCF8DA4529F29DE3008890A0 /* CinemoApp */;
+			targetProxy = BCF8DA6729F29DE6008890A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCF8DA4F29F29DE3008890A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF8DA5029F29DE3008890A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCF8DA5429F29DE5008890A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF8DA5529F29DE5008890A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCF8DA6E29F29DE6008890A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCF8DA6F29F29DE6008890A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCF8DA7129F29DE6008890A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F03A6DA9E3E36C1DEA41FFEF /* Pods-CinemoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CinemoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CinemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCF8DA7229F29DE6008890A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29F62162DDB4ACEA0C1C18C /* Pods-CinemoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CinemoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CinemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCF8DA7429F29DE6008890A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CinemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CinemoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CinemoApp";
+			};
+			name = Debug;
+		};
+		BCF8DA7529F29DE6008890A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CinemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CinemoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CinemoApp";
+			};
+			name = Release;
+		};
+		BCF8DA7729F29DE6008890A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CinemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CinemoApp;
+			};
+			name = Debug;
+		};
+		BCF8DA7829F29DE6008890A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CinemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CinemoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCF8DA4129F29DE3008890A0 /* Build configuration list for PBXProject "CinemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF8DA6E29F29DE6008890A0 /* Debug */,
+				BCF8DA6F29F29DE6008890A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF8DA7029F29DE6008890A0 /* Build configuration list for PBXNativeTarget "CinemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF8DA7129F29DE6008890A0 /* Debug */,
+				BCF8DA7229F29DE6008890A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF8DA7329F29DE6008890A0 /* Build configuration list for PBXNativeTarget "CinemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF8DA7429F29DE6008890A0 /* Debug */,
+				BCF8DA7529F29DE6008890A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF8DA7629F29DE6008890A0 /* Build configuration list for PBXNativeTarget "CinemoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF8DA7729F29DE6008890A0 /* Debug */,
+				BCF8DA7829F29DE6008890A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCF8DA3E29F29DE3008890A0 /* Project object */;
+}
