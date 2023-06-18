@@ -32,6 +32,7 @@ class ViewController: ViewControllerLayout {
         tableView.delegate = self
         tableView.dataSource = self
         searchBarView.delegate = self
+        self.hideKeyboardWhenTappedAroundTableView()
     }
     
     @objc func goFavoriteVC() {

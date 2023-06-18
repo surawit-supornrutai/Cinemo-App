@@ -29,6 +29,10 @@ extension UIViewController {
             for textField in self.view.subviews where textField is UITextField {
                 textField.resignFirstResponder()
             }
+            
+            for searchBar in self.view.subviews where searchBar is UISearchBar {
+                searchBar.resignFirstResponder()
+            }
         }
         sender.cancelsTouchesInView = false
     }
