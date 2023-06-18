@@ -29,7 +29,8 @@ struct Movie: Codable {
     let priority, nowShowing, advanceTicket: String?
     let dateUpdate: String
     let showBuyticket: String?
-    let trailerCMSID, trailerIvxKey: String
+    let trailerCMSID: String
+    let trailerIvxKey: String?
 
     enum CodingKeys: String, CodingKey {
         case id, movieCode
@@ -62,9 +63,7 @@ struct Movie: Codable {
 
 enum Rating: String, Codable {
     case empty = ""
-    case ฉ20 = "ฉ20"
     case ทป = "ทป."
     case น13 = "น13+"
-    case น15 = "น15+"
-    case น18 = "น18+"
+    case น15 = "น15+\t"
 }

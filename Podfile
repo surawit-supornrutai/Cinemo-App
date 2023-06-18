@@ -5,8 +5,9 @@ target 'CinemoApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
- 	pod 'Alamofire'
-	pod 'AlamofireImage'
+  # Pods for CinemoApp
 
+ pod 'Alamofire'
+ pod 'AlamofireImage'
 
 end
